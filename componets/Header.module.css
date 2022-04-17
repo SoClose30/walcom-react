@@ -1,0 +1,66 @@
+
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#9999FF, #F5F5F5 130%);
+    display: flex;
+}
+
+.textcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    padding: 0 50px;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.header__logo {
+    filter: drop-shadow(10px 15px 25px rgba(0,0,0,.3)) drop-shadow(-10px -15px 25px rgba(255,255,255,.8));
+}
+
+.header__text {
+    font-size: 37px;
+}
+
+.header__text span {
+    color: #9999FF;
+}
+
+.textcontainer__box {
+    background: #F5F5F5;
+    color: #222;
+    padding: 50px 50px;
+    border-radius: 5px;
+    box-shadow: 10px 15px 35px rgba(0,0,0,.15);
+}
+
+.textcontainer__ctabtn {
+    color: #F5F5F5;
+    text-decoration: none;
+    background: linear-gradient(to right, #9999FF, #F5F5F5 140%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;  
+    font-weight: 600;
+    display: inline-block;
+    margin: 25px 25px 0 0;
+    box-shadow: 10px 15px 30px rgba(0,0,0,.22);
+}
+
+.textcontainer__mintbtn {
+    color: #9999FF;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 10px 15px 30px rgba(0,0,0,.22);
+    border-radius: 5px;
+}
