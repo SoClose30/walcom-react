@@ -1,10 +1,11 @@
-import React from 'react'
+import {useEffect, React} from 'react'
 import styles from "./Header.module.css"
 import Image from "next/image"
 import HeaderLogo from "./assets/walcomlogo.png"
 import Link from "next/link"
 
 export default function Header() {
+
   return (
     <>
         <header className={styles.header}>
@@ -16,9 +17,12 @@ export default function Header() {
                 </div>
             </div>
             <div className={styles.imagecontainer}>
-                <Image src={HeaderLogo} width="500px" height="500px" className={styles.header__logo}/>
+                <div className={styles.imagewrapper}>
+                    <Image src={HeaderLogo} width={4} height={4} layout="responsive" className={styles.header__logo} />
+                </div>
             </div>
         </header>
     </>
   )
+  
 }
